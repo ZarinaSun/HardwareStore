@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="HardwareStore_Zarina.Component.UserControlTechnica"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HardwareStore_Zarina.Component"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="Blue" BorderThickness="3" Width="400" Margin="5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="16*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="TechnImage" Grid.RowSpan="2"></Image>
+            <TextBlock x:Name="DiscountTB" Grid.Row="1" HorizontalAlignment="Right"></TextBlock>
+            <TextBlock x:Name="NameTechn" Grid.Row="2"  Margin="6"></TextBlock>
+            <StackPanel Orientation="Horizontal" Grid.Row="3">
+                <Image Margin="6"></Image>
+                <TextBlock x:Name="EvaluationTechn"  Margin="6"></TextBlock>
+                <TextBlock x:Name="ReviewTechn"  Margin="6"></TextBlock>
+            </StackPanel>
+            <TextBlock x:Name="CostTechn"></TextBlock>
+            <Button Grid.Row="5" Margin="6" Width="150" HorizontalAlignment="Left" Background="#FFE31134" BorderThickness="3">
+                <Image Source="/ImageTex/basket.jpg"></Image>
+            </Button>
+            <Button Grid.Row="5" Margin="98 6 6 6" Width="60" HorizontalAlignment="Center" Background="White">
+                <Image Source="/ImageTex/like.jpg"></Image>
+            </Button>
+            <Button Grid.Row="5" Margin="6" Width="60" HorizontalAlignment="Right" Background="White">
+                <Image Source="/ImageTex/reviev.jpg"></Image>
+            </Button>
+
+        </Grid>
+    </Border>
+</UserControl>

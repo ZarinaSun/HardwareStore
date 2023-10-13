@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace HardwareStore_Zarina {
+namespace HardwareStore_Zarina.Component {
     
     
     /// <summary>
@@ -1345,7 +1345,7 @@ namespace HardwareStore_Zarina {
         }
     }
 }
-namespace HardwareStore_Zarina.HardwareShopDataSetTableAdapters {
+namespace HardwareStore_Zarina.Component.HardwareShopDataSetTableAdapters {
     
     
     /// <summary>

@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace HardwareStore_Zarina
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainUsear.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainUsear : Page
     {
-        public MainWindow()
+        public MainUsear()
         {
             InitializeComponent();
-            
         }
     }
 }

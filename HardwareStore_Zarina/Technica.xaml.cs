@@ -13,17 +13,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HardwareStore_Zarina
+namespace HardwareStore_Zarina.Component
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Technica.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Technica : Page
     {
-        public MainWindow()
+        public Technica(Image image, string Title, int Evaluation, int Cost, int Discount)
         {
             InitializeComponent();
-            
+            TechnImage.Text = Title;
+            EvaluationTechn.Text = Evaluation;
+            CostTechn.Text = Cost;
+            DiscountTB.Text = Discount;
         }
     }
 }

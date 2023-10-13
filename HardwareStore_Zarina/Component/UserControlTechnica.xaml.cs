@@ -13,16 +13,19 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HardwareStore_Zarina
+namespace HardwareStore_Zarina.Component
 {
     /// <summary>
-    /// Логика взаимодействия для TwoWindow.xaml
+    /// Логика взаимодействия для UserControlTechnica.xaml
     /// </summary>
-    public partial class TwoWindow : Page
+    public partial class UserControlTechnica : UserControl
     {
-        public TwoWindow()
+        public UserControlTechnica(Image image, string Title, int Evaluation, int Cost, int Discount)
         {
             InitializeComponent();
+            EvaluationTechn.Text = Evaluation.ToString();
+            CostTechn.Text = Cost.ToString();
+            DiscountTB.Text = Discount.ToString();
         }
     }
 }

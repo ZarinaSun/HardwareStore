@@ -70,14 +70,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="HardwareShopDataSet.Designer.cs">
+    <Compile Include="Component\HardwareShopDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HardwareShopDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="TwoWindow.xaml.cs">
-      <DependentUpon>TwoWindow.xaml</DependentUpon>
+    <Compile Include="Component\UserControlTechnica.xaml.cs">
+      <DependentUpon>UserControlTechnica.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainUsear.xaml.cs">
+      <DependentUpon>MainUsear.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartialClass\Service.cs" />
+    <Compile Include="Technica.xaml.cs">
+      <DependentUpon>Technica.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Component\UserControlTechnica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainUsear.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,7 +105,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="TwoWindow.xaml">
+    <Page Include="Technica.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,15 +128,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="HardwareShopDataSet.xsc">
+    <None Include="Component\HardwareShopDataSet.xsc">
       <DependentUpon>HardwareShopDataSet.xsd</DependentUpon>
     </None>
-    <None Include="HardwareShopDataSet.xsd">
+    <None Include="Component\HardwareShopDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>HardwareShopDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="HardwareShopDataSet.xss">
+    <None Include="Component\HardwareShopDataSet.xss">
       <DependentUpon>HardwareShopDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
@@ -132,11 +147,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Component\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ImageTex\4882732.png" />
+    <Resource Include="ImageTex\symbol.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -149,6 +162,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageTex\basket.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageTex\like.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageTex\reviev.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
